@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body class="bg-[#f8fafc]">
+    <header class="w-10/12 mx-auto mt-[60px]">
+        <h1 class="text-[#002C5C] text-4xl font-bold">Job Application Tracker</h1>
+        <div class="grid grid-cols-3 gap-4 mt-4">
+            <div class=" h-[97px] p-4 border border-gray-300 bg-white rounded-md">
+                <p class="text-sm text-[#323B49] font-medium">Total</p>
+                <p id="total" class="font-bold text-[#002C5C]">0</p>
+            </div>
+
+            <div class=" h-[97px] border border-gray-300 p-4 bg-white rounded-md">
+                <p class="text-sm text-[#323B49] font-medium">Interview</p>
+                <p id="interviewCount" class="text-[#10B981] font-bold">0</p>
+            </div>
+
+            <div class=" h-[97px] border border-gray-300 p-4 bg-white rounded-md">
+                <p class="text-sm text-[#323B49] font-medium">Rejected</p>
+                <p id="rejectedCount" class="text-red-500 font-bold">0</p>
+            </div>
+        </div>
+    </header>
+
+    <hr class="w-10/12 mx-auto text-gray-400 my-7">
+
+    <main class="w-10/12 mx-auto">
+        <div class="flex justify-between">
+            <h2>Available Jobs</h2>
+            <p>0 jobs</p>
+        </div>
+        <div class="mt-6">
+            <button class="text-gray-500 font-medium border px-5 py-2 rounded-sm bg-black"
+                id="all-filter-btn">All</button>
+            <button class="text-gray-500 font-medium border px-5 py-2 rounded-sm bg-blue-200"
+                id="interview-btn">Interview</button>
+            <button class="text-gray-500 font-medium border px-5 py-2 rounded-sm bg-blue-200"
+                id="rejected-btn">Rejected</button>
+        </div>
+
+        <section>
+            <div class="text-center border m-5 py-12 border-gray-300 bg-white rounded-md">
+                <img src="./assets/jobs.png" alt="" class="block ml-auto mr-auto ">
+                <h2 class="text-2xl text-[#002C5C]">No jobs available</h2>
+                <p class="text-[#64748B]">Check back soon for new job opportunities</p>
+            </div>
+        </section>
+
+
+    </main>
+</body>
+
+</html>
